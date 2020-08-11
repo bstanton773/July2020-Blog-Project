@@ -1,6 +1,9 @@
 from  july_blog import app
 from flask import render_template
 
+# Import for Forms
+from july_blog.forms import UserInfoForm
+
 # Home route
 @app.route('/')
 def home():
@@ -12,4 +15,5 @@ def home():
 # Register route
 @app.route('/register', methods=['GET', 'POST'])
 def register():
-    return render_template("register.html")
+    form = UserInfoForm()
+    return render_template("register.html", form=form)
