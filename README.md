@@ -1,4 +1,4 @@
-# May 2020 Cohort Blog Project
+# July 2020 Cohort Blog Project
 
 Start here for the lecture code.
 
