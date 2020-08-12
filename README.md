@@ -1,4 +1,4 @@
-# May 2020 Cohort Blog Project
+# July 2020 Cohort Blog Project
 
 Start here for the lecture code.
 
@@ -6,7 +6,7 @@ Each day and session will be updated here based on the code we created during th
 
 ---
 
-Day 1 Afternoon Code
+Day 3 Morning Code
 
 Creation of project structure using python package for Flask
 
@@ -15,10 +15,15 @@ Creation of project structure using python package for Flask
 - `app.py`
     - **same as day 1 - morning**
 - `config.py`
-    - **same as day 1 - morning**
+    - **Same as day 2 - Afternoon**
 - `routes.py`
-    - Added new route for register
+    - **Same as day 2 - Afternoon**
+    - Adding code for commit to database
 - `templates`
-    - home.html file created
-    - added routes for nav.html
-    - added register.html
+    - **Same as day1**
+
+- `forms.py`
+    - **Same as day2 morning**
+
+- `models.py`
+    - **Same as day 2 - Afternoon**

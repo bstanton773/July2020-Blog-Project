@@ -4,6 +4,9 @@ from flask import render_template, request
 # Import for Forms
 from july_blog.forms import UserInfoForm, BlogPostForm
 
+# Import for Models
+from may_blog.models import User, Post
+
 # Home route
 @app.route('/')
 def home():
@@ -22,6 +25,12 @@ def register():
         password = form.password.data
         email = form.email.data
         print("\n",username, password, email)
+        # Create an instance of User
+        user = User(username,email,password)
+        # Open and insert into database
+        db.session.add(user)
+        # Save info into database
+        db.session.commit()
     return render_template("register.html", form=form)
 
 # Create Post route
